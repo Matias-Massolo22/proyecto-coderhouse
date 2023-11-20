@@ -1,0 +1,228 @@
+@import "./partials/_resets-medidas";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/media-query";
+
+/* index */
+
+.banner {
+    background-image: url(../medios/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #F0F0F0;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    padding: 100px 0;
+
+}
+
+
+/* section - contenido principal del index - flexbox */
+.presentacionWeb {
+
+    padding: 5px;
+    margin: 5px auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .titulosWeb {
+
+        margin: 15px;
+        text-align: center;
+    }
+
+    .subtituloWeb {
+
+        margin: 15px;
+        text-align: center;
+    }
+
+    img {
+        padding: 5px;
+        width: 400px;
+    }
+
+    .textoPresentacion {
+        width: 80%;
+        margin-top: 15px;
+    }
+}
+
+
+/* 
+
+destinos populares
+
+*/
+
+.tituloYSubtitulo {
+    margin: 30px 0 100px 0;
+
+    .titulosWeb {
+
+        margin: 15px;
+        text-align: center;
+    }
+
+    .subtituloWeb {
+
+        margin: 15px;
+        text-align: center;
+    }
+
+}
+
+.nombreContinente {
+    width: 85%;
+    margin: 25px auto;
+    background-color: #4F709C;
+    padding-left: 5px;
+    color: #F0F0F0
+}
+
+.continentes {
+
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 15px auto;
+    align-items: baseline;
+    justify-content: center;
+
+    .destino {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: 0 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+/* 
+blogs de viajes
+*/
+
+.tituloSeccion {
+    width: 85%;
+    margin: 25px auto;
+    background-color: #4F709C;
+    padding-left: 5px;
+    color: #F0F0F0
+}
+
+.blogCataratas {
+
+    padding: 10px;
+    margin: 25px auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+
+    .contenidoBlog {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 55%;
+        height: 450px;
+        margin: 10px auto;
+    }
+
+    .subtituloSeccion {
+        margin: 25px 0;
+        text-decoration: underline;
+    }
+}
+
+
+/*
+
+Recursos de viaje
+
+*/
+
+.recursosViajes {
+
+    padding: 10px;
+    margin: 25px auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 
+
+contacto
+
+*/
+
+.section-grid {
+    display: grid;
+    grid-template-areas:
+        "nombre nombre"
+        "email  email"
+        "nacimiento nacimiento"
+        "pregunta pregunta"
+        "comentarios comentarios"
+        " enviar . "
+    ;
+
+    grid-template-columns: 35% 35%;
+    grid-row: 150px;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 15px;
+    border: solid 2px grey;
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+
+    .nombreApellido {
+        grid-area: nombre;
+    }
+    
+    .emailContacto {
+        grid-area: email;
+    }
+    
+    .nacimiento {
+        grid-area: nacimiento;
+    }
+    
+    .preguntaInformacion {
+        grid-area: pregunta;
+    }
+    
+    .comentarios {
+        grid-area: comentarios;
+    
+    }
+    
+    textarea {
+        width: 100%;
+    }
+    
+    .enviar {
+        grid-area: enviar;
+        width: 50%;
+    
+    
+    }
+}
+

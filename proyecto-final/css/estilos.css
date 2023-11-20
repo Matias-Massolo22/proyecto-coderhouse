@@ -1,0 +1,292 @@
+@charset "UTF-8";
+/* #F0F0F0 */
+/* #213555 */
+/* #4F709C */
+/* #E5D283 */
+/* fuentes fuentes cargadas  */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+/*font-family: 'PT Sans', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Signika+Negative:wght@300&display=swap");
+/*font-family: 'Signika Negative', sans-serif;*/
+/* Reinicio a 0 del margin y padding de la web */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente utilizada para toda la web */
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #e0e0e0;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem-10px - esto facilita la utilizacion  */
+  /* 1rem-16px */
+}
+
+/* Tamaños p */
+p {
+  font-size: 1.5rem;
+}
+
+/* Tamaños H1.... */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2.1rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+main {
+  width: 100%;
+}
+
+.navbar ul {
+  align-items: center;
+}
+
+.fondoNav {
+  background-color: #213555;
+}
+
+.nav-link {
+  color: #F0F0F0;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 1.3rem;
+}
+
+.logo {
+  width: 70px;
+  margin: 5px 0 5px 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #E5D283;
+  color: #4F709C;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+footer .redes {
+  width: 50%;
+  padding: 10px;
+}
+footer .copyright {
+  width: 50%;
+  padding: 10px;
+}
+
+/* mobile */
+@media only screen and (max-width: 500px) {
+  .banner {
+    display: none;
+  }
+  .presentacionWeb img {
+    width: 200px;
+  }
+  .continentes {
+    flex-direction: column;
+  }
+  .continentes div {
+    margin: 5px;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+/* index */
+.banner {
+  background-image: url(../medios/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #F0F0F0;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  padding: 100px 0;
+}
+
+/* section - contenido principal del index - flexbox */
+.presentacionWeb {
+  padding: 5px;
+  margin: 5px auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentacionWeb .titulosWeb {
+  margin: 15px;
+  text-align: center;
+}
+.presentacionWeb .subtituloWeb {
+  margin: 15px;
+  text-align: center;
+}
+.presentacionWeb img {
+  padding: 5px;
+  width: 400px;
+}
+.presentacionWeb .textoPresentacion {
+  width: 80%;
+  margin-top: 15px;
+}
+
+/* 
+
+destinos populares
+
+*/
+.tituloYSubtitulo {
+  margin: 30px 0 100px 0;
+}
+.tituloYSubtitulo .titulosWeb {
+  margin: 15px;
+  text-align: center;
+}
+.tituloYSubtitulo .subtituloWeb {
+  margin: 15px;
+  text-align: center;
+}
+
+.nombreContinente {
+  width: 85%;
+  margin: 25px auto;
+  background-color: #4F709C;
+  padding-left: 5px;
+  color: #F0F0F0;
+}
+
+.continentes {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 15px auto;
+  align-items: baseline;
+  justify-content: center;
+}
+.continentes .destino {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.continentes img {
+  width: 200px;
+  height: 200px;
+}
+
+/* 
+blogs de viajes
+*/
+.tituloSeccion {
+  width: 85%;
+  margin: 25px auto;
+  background-color: #4F709C;
+  padding-left: 5px;
+  color: #F0F0F0;
+}
+
+.blogCataratas {
+  padding: 10px;
+  margin: 25px auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+.blogCataratas .contenidoBlog {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 10px 0;
+}
+.blogCataratas img {
+  width: 55%;
+  height: 450px;
+  margin: 10px auto;
+}
+.blogCataratas .subtituloSeccion {
+  margin: 25px 0;
+  text-decoration: underline;
+}
+
+/*
+
+Recursos de viaje
+
+*/
+.recursosViajes {
+  padding: 10px;
+  margin: 25px auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+
+contacto
+
+*/
+.section-grid {
+  display: grid;
+  grid-template-areas: "nombre nombre" "email  email" "nacimiento nacimiento" "pregunta pregunta" "comentarios comentarios" " enviar . ";
+  grid-template-columns: 35% 35%;
+  grid-row: 150px;
+  justify-content: center;
+  justify-items: center;
+  row-gap: 15px;
+  border: solid 2px grey;
+  width: 80%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+.section-grid .nombreApellido {
+  grid-area: nombre;
+}
+.section-grid .emailContacto {
+  grid-area: email;
+}
+.section-grid .nacimiento {
+  grid-area: nacimiento;
+}
+.section-grid .preguntaInformacion {
+  grid-area: pregunta;
+}
+.section-grid .comentarios {
+  grid-area: comentarios;
+}
+.section-grid textarea {
+  width: 100%;
+}
+.section-grid .enviar {
+  grid-area: enviar;
+  width: 50%;
+}/*# sourceMappingURL=estilos.css.map */
