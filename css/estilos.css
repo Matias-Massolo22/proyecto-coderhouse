@@ -99,24 +99,6 @@ footer .copyright {
   padding: 10px;
 }
 
-/* mobile */
-@media only screen and (max-width: 500px) {
-  .banner {
-    display: none;
-  }
-  .presentacionWeb img {
-    width: 200px;
-  }
-  .continentes {
-    flex-direction: column;
-  }
-  .continentes div {
-    margin: 5px;
-  }
-  footer {
-    flex-direction: column;
-  }
-}
 /* index */
 .banner {
   background-image: url(../medios/banner.jpg);
@@ -148,6 +130,10 @@ footer .copyright {
 .presentacionWeb img {
   padding: 5px;
   width: 400px;
+}
+.presentacionWeb img:hover {
+  border: 5px solid #213555;
+  transition: 1s;
 }
 .presentacionWeb .textoPresentacion {
   width: 80%;
@@ -197,6 +183,9 @@ destinos populares
   padding-bottom: 10px;
   text-align: center;
   border-radius: 10px;
+}
+.continentes .destino:hover {
+  border: 3px solid #213555;
 }
 .continentes img {
   width: 200px;
@@ -289,4 +278,22 @@ contacto
 .section-grid .enviar {
   grid-area: enviar;
   width: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .banner {
+    display: none;
+  }
+  .presentacionWeb img {
+    width: 200px;
+  }
+  .continentes {
+    flex-direction: column;
+  }
+  .continentes div {
+    margin: 5px;
+  }
+  footer {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=estilos.css.map */

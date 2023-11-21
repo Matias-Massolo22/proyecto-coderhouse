@@ -1,7 +1,6 @@
 @import "./partials/_resets-medidas";
 @import "./partials/header";
 @import "./partials/footer";
-@import "./partials/media-query";
 
 /* index */
 
@@ -42,6 +41,13 @@
     img {
         padding: 5px;
         width: 400px;
+
+    }
+
+    img:hover {
+
+        border: 5px solid #213555;
+        transition: 1s;
     }
 
     .textoPresentacion {
@@ -101,6 +107,10 @@ destinos populares
         padding-bottom: 10px;
         text-align: center;
         border-radius: 10px;
+    }
+
+    .destino:hover{
+        border: 3px solid #213555;
     }
 
     img {
@@ -226,3 +236,30 @@ contacto
     }
 }
 
+@media only screen and (max-width:500px) {
+
+
+
+
+    .banner {
+        display: none;
+    }
+
+    .presentacionWeb img {
+        width: 200px;
+    }
+
+    .continentes {
+        flex-direction: column;
+
+    }
+
+    .continentes div {
+        margin: 5px;
+    }
+
+
+    footer {
+        flex-direction: column;
+    }
+}
