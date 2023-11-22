@@ -47,7 +47,7 @@
     img:hover {
 
         border: 5px solid #213555;
-        transition: 1s;
+        transition: 0.5s;
     }
 
     .textoPresentacion {
@@ -251,12 +251,13 @@ contacto
 
     .continentes {
         flex-direction: column;
-
     }
+
 
     .continentes div {
         margin: 5px;
     }
+
 
 
     footer {

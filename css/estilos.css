@@ -133,7 +133,7 @@ footer .copyright {
 }
 .presentacionWeb img:hover {
   border: 5px solid #213555;
-  transition: 1s;
+  transition: 0.5s;
 }
 .presentacionWeb .textoPresentacion {
   width: 80%;
