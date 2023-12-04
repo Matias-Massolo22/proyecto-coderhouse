@@ -1,8 +1,8 @@
 footer {
     display: flex;
     flex-direction: row;
-    background-color: #E5D283;
-    color: #4F709C;
+    background-color: $color-footer;
+    color: $texto-footer;
     align-items: center;
     justify-content: center;
     margin-top: 50px;

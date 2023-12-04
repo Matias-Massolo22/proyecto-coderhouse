@@ -1,9 +1,11 @@
-/* #F0F0F0 */
+/* #e0e0e0 */
 /* #213555 */
 /* #4F709C */
 /* #E5D283 */
-
-
+$color-header: #213555;
+$color-footer:#E5D283;
+$color-body:#e0e0e0;
+$texto-footer:#4F709C;
 /* fuentes fuentes cargadas  */
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
@@ -24,7 +26,7 @@
 /* Fuente utilizada para toda la web */
 body {
     font-family: 'PT Sans', sans-serif;
-    background-color: #e0e0e0;
+    background-color: $color-body;
 }
 
 html {

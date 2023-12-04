@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* #F0F0F0 */
+/* #e0e0e0 */
 /* #213555 */
 /* #4F709C */
 /* #E5D283 */
@@ -293,7 +293,13 @@ contacto
   .continentes div {
     margin: 5px;
   }
+  .blogCataratas img {
+    width: 80%;
+    height: 300px;
+  }
   footer {
     flex-direction: column;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
